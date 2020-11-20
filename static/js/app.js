@@ -2,7 +2,7 @@ function init() {
   // Grab a reference to the dropdown select element
   var selection = d3.select("#selDataset");
 
-  d3.json("../samples.json").then((data) => {
+  d3.json("../../samples.json").then((data) => {
     var sampleNames = data[0].names;
    
     sampleNames.forEach((sample) => {
@@ -29,7 +29,7 @@ init();
 function buildCharts(sampleid) {
   //update demographic info area
   var demoarea = d3.select('#sample-metadata');
-  d3.json("../samples.json").then((data) => {
+  d3.json("../../samples.json").then((data) => {
     
     var metadata = data[0].metadata;
        
